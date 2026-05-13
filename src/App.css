@@ -1,0 +1,153 @@
+/* ---------- BODY ---------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 40px;
+
+  background: #111827;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+
+  padding: 10px 18px;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+.active {
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+}
+
+/* ---------- HOME ---------- */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 40px;
+}
+
+.note-card {
+  width: 700px;
+
+  background: #111827;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.note-card h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #38bdf8;
+}
+
+/* ---------- INPUT ---------- */
+
+.note-input {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 12px;
+
+  font-size: 16px;
+
+  margin-bottom: 20px;
+
+  background: #1e293b;
+  color: white;
+}
+
+/* ---------- TEXTAREA ---------- */
+
+.note-textarea {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+  outline: none;
+
+  border-radius: 12px;
+
+  resize: none;
+
+  font-size: 16px;
+
+  background: #1e293b;
+  color: white;
+
+  margin-bottom: 20px;
+}
+
+/* ---------- BUTTON ---------- */
+
+.note-btn {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: #38bdf8;
+
+  color: black;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.note-btn:hover {
+  background: #0ea5e9;
+  transform: scale(1.02);
+}

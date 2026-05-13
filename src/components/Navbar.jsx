@@ -3,16 +3,33 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <>
-      <ul className="navbar nav-flex">
-        <li className="navbar">
-          <NavLink to="/">Home</NavLink>
+    <nav className="navbar-container">
+      <div className="logo">📝 Notes App</div>
+
+      <ul className="nav-links">
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Home
+          </NavLink>
         </li>
-        <li className="navbar">
-          <NavLink to="/pastes">Pastes all</NavLink>
+
+        <li>
+          <NavLink
+            to="/pastes"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            All Notes
+          </NavLink>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }
 
