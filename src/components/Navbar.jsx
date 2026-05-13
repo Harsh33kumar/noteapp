@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar-container">
-      <div className="logo">📝 Notes App</div>
+      <div className="logo">Notes App</div>
 
       <ul className="nav-links">
         <li>
@@ -25,7 +25,7 @@ function Navbar() {
               isActive ? "nav-link active" : "nav-link"
             }
           >
-            All Notes
+           Notes
           </NavLink>
         </li>
       </ul>

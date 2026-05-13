@@ -80,14 +80,24 @@ function Paste() {
                   className="px-4 py-2 rounded-xl bg-green-500 hover:bg-green-600 transition"
                   onClick={async () => {
                     try {
-                      await navigator.share({
-                        title: paste.title,
-                        text: paste.content,
-                      });
+                      if (navigator.share) {
+                        await navigator.share({
+                          title: paste.title,
+                          text: paste.content,
+                          url: window.location.href,
+                        });
 
-                      toast.success("Shared Successfully");
+                        toast.success("Shared Successfully");
+                      } else {
+                        await navigator.clipboard.writeText(
+                          `${paste.title}\n\n${paste.content}`,
+                        );
+
+                        toast.success("Copied to Clipboard");
+                      }
                     } catch (error) {
-                      toast.error("Sharing Cancelled");
+                      console.log(error);
+                      toast.error("Sharing Failed");
                     }
                   }}
                 >
