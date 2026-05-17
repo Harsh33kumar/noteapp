@@ -61,7 +61,7 @@ src/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repository-link>
+git clone https://github.com/Harsh33kumar/noteapp.git
 ```
 
 ## 2️⃣ Move into Project Folder
@@ -152,19 +152,6 @@ localStorage
 ```
 
 This ensures notes remain available after refreshing the browser.
-
----
-
-# 🔮 Future Improvements
-
-* User Authentication
-* Cloud Database Integration
-* Categories & Tags
-* Rich Text Editor
-* Markdown Support
-* Note Pinning
-* Dark/Light Mode Toggle
-* Export Notes as PDF
 
 ---
 
